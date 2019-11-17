@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700|Montserrat&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/card.css">
+
+  <title>Omar Nazario</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/14238cbd43.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-justify">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top background2">
+      <a class="navbar-brand active" href="#" onclick="changeActive(this)">Omar Nazario</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" onclick="changeActive(this), start()">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" onclick="changeActive(this)">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" onclick="changeActive(this)">About Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="jumbotron jumbotron-fluid text-center">
+        <div class="out">
+          <div class="intro-mid">
+            <h1 class="display-4">Omar Nazario</h1>
+            <h1>Web Developer and Designer</h1>
+            <div class="intro-bot">
+              <a href="#skills" onclick="start()"><i class="fas fa-angle-double-down fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="background">
+      <div class="container">
+        <h2 class="text-center">Skills & Knowledge</h2>
+        <hr class="hr">
+
+        <div class="row">
+          <div class="col-12 col-xl-6">
+            <img
+              src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+              alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-xl-6">
+            <p class="text">HTML & CSS<span class="tab">&mdash;</span><span class="percent"></span></p>
+            <div class="progressBar">
+              <div class="bar" data-value='100'></div>
+            </div>
+
+            <p class="text">JavaScript<span class="tab">&mdash;</span><span class="percent"></span></p>
+            <div class="progressBar">
+              <div class="bar" data-value='100'></div>
+            </div>
+
+            <p class="text">Bootstrap<span class="tab">&mdash;</span><span class="percent"></span></p>
+            <div class="progressBar">
+              <div class="bar" data-value='100'></div>
+            </div>
+            <p class="text">WordPress<span class="tab">&mdash;</span><span class="percent"></span></p>
+            <div class="progressBar">
+              <div class="bar" data-value='75'></div>
+            </div>
+            <p class="text">Python<span class="tab">&mdash;</span><span class="percent"></span></p>
+            <div class="progressBar">
+              <div class="bar" data-value='75'></div>
+            </div>
+            <p class="text">C++<span class="tab">&mdash;</span><span class="percent"></span></p>
+            <div class="progressBar">
+              <div class="bar" data-value='75'></div>
+            </div>
+            <p class="text">Java<span class="tab">&mdash;</span><span class="percent"></span></p>
+            <div class="progressBar">
+              <div class="bar" data-value='75'></div>
+            </div>
+            <p class="text">React<span class="tab">&mdash;</span><span class="percent"></span></p>
+            <div class="progressBar">
+              <div class="bar" data-value='50'></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="card text-center" id="card">
+          <div class="card-header background2">
+            <h2>Projects</h2>
+            <hr class="hr">
+            <ul class="nav justify-content-center">
+              <li class="nav-item active">
+                <button class="btn" onclick="filter(this, 'All')">
+                  <h5>All</h5>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="btn" onclick="filter(this, 'Websites')">
+                  <h5>Websites</h5>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="btn" onclick="filter(this, 'JavaScript')">
+                  <h5>JavaScript</h5>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2 project" data-value="Website">
+                <a class="card" href="projects/Its Sweet/index.html" target="_blank">
+                  <img src="projects/Its Sweet/images/cakePops.jpg" class="card-img" alt="cake pops">
+                  <div class="card-img-overlay">
+                    <h5 class="">It's Sweet</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2 project" data-value="JavaScript">
+                <a class="card" href="projects/Organizer/index.html" target="_blank">
+                  <img
+                    src="https://images.pexels.com/photos/131979/pexels-photo-131979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">Organizer</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 col-xl-2 project" data-value="JavaScript">
+                <div class="card">
+                  <img
+                    src="https://images.pexels.com/photos/2867164/pexels-photo-2867164.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="card-img" alt="...">
+                  <div class="card-img-overlay bg-color">
+                    <h5 class="card-title">W.I.P.</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="dark-overlay">
+      <div class="container text-center">
+        <h2>About Me</h2>
+        <hr class="hr">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4">
+            <img src="https://cdn.pixabay.com/photo/2018/02/04/09/09/brushes-3129361_1280.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-12 col-sm-6 col-md-8 text-left shadow-sm p-4">
+            <h4>Dawing & Graphic Design</h4>
+            <p>
+              I enjoy <strong>drawing</strong> and <strong>designing</strong> in my spare time. This has helped me be
+              more <strong>creative</strong>, and
+              has taught me the
+              importance of experimenting until I find the perfect design.
+            </p>
+            <p>This has helped me develop skills in:</p>
+            <ul>
+              <li>Photoshop</li>
+              <li>Clip Studio Paint</li>
+              <li>Blender</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="background text-center footer">
+        <h2>Omar Nazario</h2>
+        <h6>Copyright &copy; <span id="year"></span></h6>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn" id="btn" data-toggle="modal" data-target="#exampleModal">
+          Contact Me
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content text-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-left">
+                <form action="">
+                  <label for="subject">Subject: </label>
+                  <input type="text" name="subject" id="">
+                  <br><br>
+                  <label for="">Message: </label><br>
+                  <textarea name="" id="" rows="10"></textarea>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+  <script src="bars.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

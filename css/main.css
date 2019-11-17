@@ -1,0 +1,209 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(
+    rgba(20,20,20, .5), 
+    rgba(20,20,20, .5)),
+    url("https://images.pexels.com/photos/743986/pexels-photo-743986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+nav{
+  box-shadow: 0px 0px 5px grey;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+nav a{
+  color: #465881 !important;
+}
+
+nav a:hover{
+  color: #00909e !important;
+}
+
+nav i{
+  color: #465881 !important;
+  margin-top: .4rem;
+}
+
+nav .active{
+  color: #00909e !important;
+}
+
+#projects .nav-item a{
+  margin-top: .5rem;
+  color: black;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+#skills .container{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Button */
+#btn{
+  margin-top: .5rem;
+  background-color: #465881;
+  color: #c9d1d3;
+}
+
+#btn:hover{
+  background-color: #a8ccd7;
+  color: #465881;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+/* Backgrounds */
+.background{
+  background-color: #1b2a49;
+  color: #c9d1d3 !important;
+}
+
+.background2{
+  background-color: white;
+}
+
+#projects{
+  background-color: white;
+  padding-bottom: 1rem;
+}
+
+#projects h2{
+  color: #465881;
+}
+
+#projects button:hover{
+  color: #00909e;
+}
+
+#projects .active a, .active button{
+  color: #00909e !important;
+}
+
+#skills{
+  padding: 1rem;
+}
+
+#skills, #about{
+  color: black;
+}
+
+h2{
+  font-weight: bold;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+#about h2{
+  color: white;
+}
+
+img{
+  border-radius: 5px;
+}
+
+.img-fluid{
+  margin-bottom: 2rem !important;
+}
+
+#skills img{
+  margin-bottom: 1rem;
+}
+
+.dark-overlay{
+  color: #eeeeee !important;
+  padding: 1rem;
+}
+
+/* hr */
+.hr{
+  border: 1px solid #a8ccd7;
+  width: 15rem;
+}
+
+#projects .hr{
+  margin-bottom: 2rem;
+}
+
+#skills hr{
+  margin-bottom: 5rem;
+}
+
+/* FOOTER */
+.footer{
+  padding: 1rem 0;
+  padding-bottom: 3rem;
+}
+
+.project{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+/* Progress Bars */
+.bar{
+  background-color: #a8ccd7;
+  border-radius: 5px;
+  height: 1rem;
+  margin-bottom: 1rem;
+  width: 1%;
+}
+
+.tab{
+  margin: 0 10px;
+}
+
+/* 4K Screens */
+@media (max-width: 3840px) {
+  #skills .container{
+    max-width: 1780px;
+  }
+}
+
+/* Home Section */
+.jumbotron{
+  margin-bottom: 0;
+  height: 100vh;
+  background: linear-gradient( rgba(20,20,20, .6), rgba(20,20,20, .6)), url('https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center fixed;
+    background-size: cover;
+  color: #eeeeee;
+}
+
+.out{
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: table;
+}
+
+.intro-mid{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.intro-bot{
+  left: 50%;
+  bottom: 3rem;
+  position: absolute;
+}
+
+.intro-bot i{
+  color: #eeeeee;
+}
