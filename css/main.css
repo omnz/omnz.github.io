@@ -186,24 +186,30 @@ img{
   color: #eeeeee;
 }
 
-.out{
+.outside{
   text-align: center;
   height: 100vh;
-  width: 100%;
+  width: 75%;
   display: table;
+  margin: 0 auto;
 }
 
-.intro-mid{
+.middle{
   display: table-cell;
   vertical-align: middle;
 }
 
-.intro-bot{
+.middle h2{
+  margin-top: 0;
+}
+
+.bottom{
   left: 50%;
+  margin-left: -15px;
   bottom: 3rem;
   position: absolute;
 }
 
-.intro-bot i{
+.bottom i{
   color: #eeeeee;
 }

@@ -38,7 +38,6 @@ function animate(currentBar) {
 
 // Call 'start()' on scroll
 window.onscroll = () => {
-  console.log(document.documentElement.scrollTop)
   if (document.documentElement.scrollTop >= 200) {
     start();
   }
