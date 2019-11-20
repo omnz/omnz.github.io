@@ -14,7 +14,9 @@ function addToList() {
   // Clear text
   input.value = '';
 
-  createList(item);
+  if (item != '') {
+    createList(item);
+  }
 }
 
 function createList(item) {
