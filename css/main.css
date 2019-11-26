@@ -171,26 +171,6 @@ img{
   margin: 0 10px;
 }
 
-@media (min-width: 320px) {
-  .img{
-    padding: 3rem 1rem !important;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .img{
-    padding: 5rem 3rem !important;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .img{
-    padding: 4.3rem 2rem !important;
-  }
-}
-
 /* 1080p */
 @media (min-width: 1920px) {
   #skills .container{
@@ -202,10 +182,6 @@ img{
 @media (min-width: 2160px) {
   #skills .container{
     max-width: 1780px;
-  }
-
-  .img{
-    padding: 6rem 2rem !important;
   }
 }
 
@@ -244,9 +220,4 @@ img{
 
 .bottom i{
   color: #eeeeee;
-}
-
-.img{
-  padding: 5rem 3rem;
-  background-color: rgb(50, 54, 57) !important;
 }
