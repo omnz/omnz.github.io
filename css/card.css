@@ -13,8 +13,8 @@
 }
 
 .card img{
-  height: 8rem;
-  background-color: #93b5b3;
+  height: 12rem;
+  background-color: #fe6845;
 }
 
 .card h5{
@@ -40,4 +40,41 @@
 
 .bg-color{
   background-color: #00909e;
+}
+
+@media (min-width: 320px) {
+  .card h5{
+    font-size: smaller !important;
+  }
+  .card img{
+    height: 8rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .card h5{
+    font-size: larger !important;
+  }
+  .card img{
+    height: 16rem !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card h5{
+    font-size: larger !important;
+  }
+  .card img{
+    height: 16rem !important;
+  }
+}
+/* 4K Screens */
+@media (min-width: 2160px) {
+  .card h5{
+    font-size: larger !important;
+  }
+  .card img{
+    height: 18rem !important;
+  }
 }

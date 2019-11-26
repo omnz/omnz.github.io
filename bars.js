@@ -1,6 +1,5 @@
 const barElements = document.querySelectorAll('.bar');
-const percentElements = document.querySelectorAll('.percent');
-const bars = [{ width: '', maxWidth: '', percent: '' }];
+const bars = [{ width: '', maxWidth: '' }];
 let ran = false;
 
 function start() {
@@ -8,7 +7,6 @@ function start() {
     for (i = 0; i < barElements.length; i++) {
       bars[i] = barElements[i];
       bars[i].width = 0;
-      bars[i].percent = percentElements[i];
 
       // Get max width
       const maxWidth = barElements[i].getAttribute('data-value');
@@ -29,7 +27,6 @@ function animate(currentBar) {
       x = 0;
     }
     else {
-      currentBar.percent.innerText = currentBar.width + 1 + '%';
       currentBar.width++;
       currentBar.style.width = currentBar.width + "%";
     }
