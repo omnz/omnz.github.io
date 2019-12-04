@@ -11,7 +11,8 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700|Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/main.css">
@@ -122,24 +123,18 @@
     <section id="projects">
       <div class="container">
         <div class="card text-center" id="card">
-          <div class="card-header background2">
+          <div class="card-header">
             <h2>Projects</h2>
             <hr class="hr">
             <ul class="nav justify-content-center">
-              <li class="nav-item active">
-                <button class="btn" onclick="filter(this, 'All')">
-                  <h5>All</h5>
-                </button>
+              <li class="nav-item">
+                <button class="btn btnText active" onclick="filter(this, 'All')">All</button>
               </li>
               <li class="nav-item">
-                <button class="btn" onclick="filter(this, 'Websites')">
-                  <h5>Websites</h5>
-                </button>
+                <button class="btn btnText" onclick="filter(this, 'Websites')">Websites</button>
               </li>
               <li class="nav-item">
-                <button class="btn" onclick="filter(this, 'JavaScript')">
-                  <h5>JavaScript</h5>
-                </button>
+                <button class="btn btnText" onclick="filter(this, 'JavaScript')">JavaScript</button>
               </li>
             </ul>
           </div>
@@ -157,7 +152,7 @@
                 <a class="card" href="https://omnz.github.io/Organizer/" target="_blank">
                   <img
                     src="https://images.pexels.com/photos/131979/pexels-photo-131979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    alt="...">
+                    alt="to-do list">
                   <div class="card-img-overlay">
                     <h5 class="card-title">Organizer</h5>
                   </div>
@@ -168,6 +163,15 @@
                   <img src="https://cdn.pixabay.com/photo/2013/07/12/15/02/fingers-149295_1280.png" alt="...">
                   <div class="card-img-overlay">
                     <h5 class="card-title">Rock, Paper, Scissors</h5>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6 col-md-6 col-lg-4 col-xl-4 project" data-value="Website">
+                <a class="card" href="https://on-wplabs.000webhostapp.com/" target="_blank">
+                  <img src="https://on-wpLabs.000webhostapp.com/wp-content/uploads/2019/09/sydney-slider-3.jpg"
+                    class="card-img" alt="background image">
+                  <div class="card-img-overlay">
+                    <h5 class="">WordPress Demo Site</h5>
                   </div>
                 </a>
               </div>
@@ -183,10 +187,10 @@
         <h2>About Me</h2>
         <hr class="hr">
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-4">
+          <div class="col-12 col-lg-4">
             <img src="https://cdn.pixabay.com/photo/2018/02/04/09/09/brushes-3129361_1280.jpg" alt="" class="img-fluid">
           </div>
-          <div class="col-12 col-sm-6 col-md-8 text-left shadow-sm p-4">
+          <div class="col-12 col-lg-8 text-left shadow-sm p-4">
             <h4>Drawing & Graphic Design</h4>
             <p>
               I enjoy <strong>drawing</strong> and <strong>designing</strong> in my spare time. This has helped me be
@@ -227,12 +231,12 @@
                 </button>
               </div>
               <div class="modal-body text-left">
-                <form action="">
-                  <label for="subject">Subject: </label>
-                  <input type="text" name="subject" id="">
+                <form>
+                  <label>Subject: </label>
+                  <input type="text">
                   <br><br>
-                  <label for="">Message: </label><br>
-                  <textarea name="" id="" rows="10"></textarea>
+                  <label>Message: </label><br>
+                  <textarea rows="10"></textarea>
                 </form>
               </div>
               <div class="modal-footer">

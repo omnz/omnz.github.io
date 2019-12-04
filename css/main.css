@@ -4,13 +4,8 @@ html {
 
 body{
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(
-    rgba(20,20,20, .5), 
-    rgba(20,20,20, .5)),
-    url("https://images.pexels.com/photos/743986/pexels-photo-743986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-repeat: no-repeat;
+  background: linear-gradient( rgba(20,20,20, .6), rgba(20,20,20, .6)), url('https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center fixed;
   background-size: cover;
-  background-position: bottom;
 }
 
 nav{
@@ -20,20 +15,20 @@ nav{
 }
 
 nav a{
-  color: #465881 !important;
+  color: #364e68 !important;
 }
 
 nav a:hover{
-  color: #00909e !important;
+  color: #132238 !important;
 }
 
 nav i{
-  color: #465881 !important;
+  color: #364e68 !important;
   margin-top: .4rem;
 }
 
 nav .active{
-  color: #00909e !important;
+  color: #132238 !important;
 }
 
 #projects .nav-item a{
@@ -52,13 +47,17 @@ nav .active{
 /* Button */
 #btn{
   margin-top: .5rem;
-  background-color: #465881;
-  color: #c9d1d3;
+  background-color: #ebf0f6;
+  color: #364e68;
 }
 
 #btn:hover{
-  background-color: #a8ccd7;
-  color: #465881;
+  background-color: #98ccd3;
+  color: #364e68;
+}
+
+.btn{
+  color: #98ccd3;
 }
 
 .btn:focus,.btn:active {
@@ -66,10 +65,15 @@ nav .active{
   box-shadow: none;
 }
 
+.btnText{
+  font-size: larger;
+  margin-top: -1rem;
+}
+
 /* Backgrounds */
 .background{
-  background-color: #1b2a49;
-  color: #c9d1d3 !important;
+  background-color: #132238;
+  color: #ebf0f6 !important;
 }
 
 .background2{
@@ -77,29 +81,39 @@ nav .active{
 }
 
 #projects{
-  background-color: white;
-  padding-bottom: 1rem;
-  /* height: 75vh; */
+  background-color: #ebf0f6;
+  padding-bottom: 4.5rem;
 }
 
 #projects h2{
-  color: #465881;
+  color: #364e68;
 }
 
 #projects button:hover{
-  color: #00909e;
+  color: #364e68;
 }
 
-#projects .active a, .active button{
-  color: #00909e !important;
+#projects .active{
+  color: #364e68 !important;
 }
 
 #skills{
   padding: 1rem;
 }
 
-#skills, #about{
-  color: black;
+#about{
+  background: linear-gradient(
+    rgba(20,20,20, .5), 
+    rgba(20,20,20, .5)),
+    url("https://images.pexels.com/photos/743986/pexels-photo-743986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 5rem;
+}
+
+#about hr{
+  margin-bottom: 3rem !important;
 }
 
 h2{
@@ -132,7 +146,7 @@ img{
 
 /* hr */
 .hr{
-  border: 1px solid #a8ccd7;
+  border: 1px solid #98ccd3;
   width: 15rem;
 }
 
@@ -160,7 +174,7 @@ img{
 
 /* Progress Bars */
 .bar{
-  background-color: #a8ccd7;
+  background-color: #98ccd3;
   border-radius: 5px;
   height: 1rem;
   margin-bottom: 1rem;
@@ -189,8 +203,7 @@ img{
 .jumbotron{
   margin-bottom: 0;
   height: 100vh;
-  background: linear-gradient( rgba(20,20,20, .6), rgba(20,20,20, .6)), url('https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center fixed;
-    background-size: cover;
+  background: transparent;
   color: #eeeeee;
 }
 

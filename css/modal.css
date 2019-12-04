@@ -1,18 +1,17 @@
 .modal h5, .modal label{
-  color: #1b2a49;
+  color: #132238;
   font-weight: bold;
 }
 
 .modal-footer button{
-  background-color: #1b2a49;
-  border-color: #1b2a49;
-  color: white;
+  background-color: #132238;
+  border-color: #132238;
+  color: #ebf0f6;
 }
 
 .modal-footer button:hover{
-  background-color: #a8ccd7;
-  border-color: #a8ccd7;
-  color: #1b2a49;
+  background-color: #132238;
+  border-color: #132238;
 }
 
 input[type=text], textarea{

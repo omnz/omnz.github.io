@@ -4,17 +4,18 @@
 }
 
 .card, .card-header{
-  border: none !important;
-  border-radius: 0 !important;
+  border: none;
+  background: transparent;
 }
 
 .card-body{
-  border: none !important;
+  border: none;
 }
 
 .card img{
   height: 12rem;
   background-color: #fe6845;
+  border-radius: .5rem;
 }
 
 .card h5{
@@ -28,10 +29,7 @@
   background: linear-gradient(
                      rgba(20,20,20, .5), 
                      rgba(20,20,20, .5));
-}
-
-.card-body a{
-  background-color: red;
+  border-radius: .5rem;
 }
 
 .card-body a:hover{
@@ -40,6 +38,10 @@
 
 .bg-color{
   background-color: #00909e;
+}
+
+.project{
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 320px) {
