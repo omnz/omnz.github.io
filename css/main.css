@@ -4,6 +4,9 @@ html {
 
 body{
   font-family: 'Montserrat', sans-serif;
+}
+
+#home{
   background: linear-gradient( rgba(20,20,20, .6), rgba(20,20,20, .6)), url('https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center fixed;
   background-size: cover;
 }
