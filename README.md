@@ -1,2 +1,2 @@
 # omnz.github.io
-Portfolio site
+Portfolio site: https://omnz.github.io/
